@@ -1,0 +1,34 @@
+<div class="block">
+<div class="block:before">
+<div class="small-3 small-centered columns">
+  <div class="centered">
+  <div class="row collapse">
+    <%= image_tag "sponsoratti.png" %><br>
+    <p>promote your brand | brand your team</p>
+    <div class="small-10 columns">
+      <%= form_for @email do |e| %>
+        <%= e.email_field :email, placeholder: 'your@email.com' %>
+        </div>
+        <div class="small-2 columns">
+          <%= e.submit "Submit", class: 'button postfix' %>
+      <% end %>
+      </div>
+      <p>Invitations to private beta coming soon</p>
+      <a href="/learn-more" data-reveal-id="myModal">Learn More</a>
+
+      <div id="myModal" class="reveal-modal" data-reveal>
+        <h2>Sports Teams, Groups and Individuals</h2>
+        <p class="lead">Whether you've influence in numbers, or influence is your number.</p>
+        <p>Sponsoratti can make you the best looking team on the field by pairing your team with a company looking to promote its brand.  They supply your team with company and team branded t-shirts/hats/swag and maybe even a portion of, if not all of, your team league dues.  All you have to do is look good wearing your joint team-company branded gear, while you play ball and go out for social gatherings after the game.</p>
+        <h2>Businesses and Causes</h2>
+        <p class="lead">Walking billboards, for a fraction of the cost!</p>
+        <p>You could pay thousands of dollars per month for a billboard, or, you could pay a fraction and sponsor a sports team in your chosen locale.  Just give us the logo and colors you'd like to be used, we'll create the t-shirts complete with your company's logo and your sponsored team's player info (number, name, team name).  Voila!  Walking billboards, from city parks to downtown happy hours... your brand is getting known for pennies on the marketing dollar!</p>
+        <a class="close-reveal-modal">&#215;</a>
+      </div>
+      </div>
+</div>
+</div>
+</div>
+</div>
+
+
