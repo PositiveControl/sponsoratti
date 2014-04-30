@@ -5,7 +5,8 @@ class EmailsController < ApplicationController
 
   def create
     @email = Email.create(safe_params)
-    redirect_to action: :show, id: @email.id
+    flash[:notice] = "Thank you for your interest"
+    redirect_to action: :new, id: @email.id
   end
 
   def show
